@@ -1,7 +1,14 @@
 body {
   margin: auto auto;
   font-family: "Roboto";
-  background-color: aquamarine;
+
+  background: rgb(2, 0, 36);
+  background: linear-gradient(
+    90deg,
+    rgb(15, 35, 114) 0%,
+    rgb(94, 94, 185) 35%,
+    rgb(124, 179, 190) 100%
+  );
   display: flex;
   justify-self: center;
   align-items: center;

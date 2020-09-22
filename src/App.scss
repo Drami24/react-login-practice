@@ -1,8 +1,26 @@
-.formulario {
+.app-container {
+  width: 100vw;
+  height: 100vh;
   display: flex;
-  flex-direction: column;
-  background-color: white;
-  width: 20vw;
-  height: 40vh;
-  padding: 2vh;
+  align-items: center;
+  justify-content: center;
+  .formulario {
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.5);
+    transition: 0.3s;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: white;
+    width: 17rem;
+    padding: 2.8rem 1.5rem;
+    border-radius: 11px;
+    .login-image {
+      height: 7rem;
+      width: 7rem;
+      border-radius: 20px;
+      box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.5);
+      transition: 0.3s;
+      margin-bottom: 0.5rem;
+    }
+  }
 }
