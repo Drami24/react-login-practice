@@ -1,33 +1,19 @@
 import React, { useState } from "react";
-import { makeStyles } from "@material-ui/core/styles";
-import TextField from "@material-ui/core/TextField";
-import Button from "@material-ui/core/Button";
-import PersonIcon from "@material-ui/icons/Person";
-import LockIcon from "@material-ui/icons/Lock";
+import { TextField, Button, Grid } from "@material-ui/core";
+import { Person, Lock } from "@material-ui/icons";
 
 import "./LoginForm.scss";
-import { Grid } from "@material-ui/core";
-
-const useStyles = makeStyles((theme) => ({
-  root: {
-    "& > *": {
-      margin: theme.spacing(1),
-      width: "25ch",
-    },
-  },
-}));
 
 export const LoginForm = () => {
   const [email, setEmail] = useState();
   const [password, setPassword] = useState();
-  const classes = useStyles();
 
   return (
     <form className="form-material" noValidate autoComplete="off">
       <div className="login-input">
         <Grid container spacing={1} alignItems="flex-end">
           <Grid item>
-            <PersonIcon />
+            <Person />
           </Grid>
           <Grid item>
             <TextField name="email" label="Email" />
@@ -37,7 +23,7 @@ export const LoginForm = () => {
       <div className="login-input">
         <Grid container spacing={1} alignItems="flex-end">
           <Grid item>
-            <LockIcon></LockIcon>
+            <Lock />
           </Grid>
           <Grid item>
             <TextField name="password" type="password" label="Password" />
